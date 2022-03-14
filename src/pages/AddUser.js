@@ -8,6 +8,7 @@ import Container from "../components/Container";
 import MyButton from "../components/MyButton";
 import { theme } from "../theme";
 import { createUserStart } from "../redux/userAction";
+import Logo from "../components/Logo";
 
 function AddUser() {
   const navigate = useNavigate();
@@ -37,6 +38,7 @@ function AddUser() {
   return (
     <>
       <Container>
+        <Logo />
         <ThemeProvider theme={theme}>
           <Box
             as="form"
@@ -44,7 +46,7 @@ function AddUser() {
             py={3}
             sx={{ margin: "auto", fontFamily: "Lato, sans-serif" }}
           >
-            <Heading color="white" fontFamily="Lato, sans-serif">
+            <Heading color="white" fontFamily="Lato, sans-serif" mt="-10px">
               Add User Details
             </Heading>
             <Flex m={2} p={3} flexWrap="wrap" alignItems="center">

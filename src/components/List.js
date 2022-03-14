@@ -5,6 +5,8 @@ import { ThemeProvider } from "@emotion/react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUserStart, getUsersStart } from "../redux/userAction";
 import { Text, Heading, Image, Flex } from "rebass";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 
 const List = (props) => {
   const male = require("../assets/male.jpg");
@@ -82,11 +84,11 @@ const List = (props) => {
                         fontSize={[2, 3]}
                         color="#dd4b39"
                       >
-                        <i className="fa-solid fa-trash-can"></i>
+                        <DeleteIcon />
                       </Text>
                       <Link to={`/editUser/${id}`}>
                         <Text ml={3} fontSize={[2, 3]} color="#55acee">
-                          <i className="fa-solid fa-pen"></i>
+                          <EditIcon />
                         </Text>
                       </Link>
                     </Flex>

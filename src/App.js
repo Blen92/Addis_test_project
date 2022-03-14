@@ -10,10 +10,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Link to="/">UserList</Link> &nbsp;
-        <Link to="/user/1">UserInfo</Link> &nbsp;
-        <Link to="/addUser">AddUser</Link> &nbsp;
-        <Link to="/editUser/4">EditUser</Link> &nbsp; */}
         <Routes>
           <Route path="/" element={<UserList />} />
           <Route path="/user/:id" element={<UserInfo />} />

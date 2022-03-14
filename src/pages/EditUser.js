@@ -8,6 +8,7 @@ import Container from "../components/Container";
 import MyButton from "../components/MyButton";
 import { theme } from "../theme";
 import { updateUserStart } from "../redux/userAction";
+import Logo from "../components/Logo";
 
 function EditUser() {
   const navigate = useNavigate();
@@ -49,6 +50,7 @@ function EditUser() {
   return (
     <>
       <Container>
+        <Logo />
         <ThemeProvider theme={theme}>
           <Box
             as="form"
@@ -56,8 +58,13 @@ function EditUser() {
             py={3}
             sx={{ margin: "auto", fontFamily: "Lato, sans-serif" }}
           >
-            <Heading color="white" fontFamily="Lato, sans-serif">
-              update User Details
+            <Heading
+              color="white"
+              fontFamily="Lato, sans-serif"
+              mt="-10px"
+              mb="10px"
+            >
+              Update User Details
             </Heading>
             <Flex m={2} p={3} flexWrap="wrap" alignItems="center">
               <Box px={2}>

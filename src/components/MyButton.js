@@ -7,7 +7,7 @@ const MyButton = (props) => {
       {...props}
       fontSize={[1, 2]}
       sx={{
-        backgroundImage: "linear-gradient(to right, #40005d, #3957ED)",
+        backgroundImage: "linear-gradient(45deg, #40005d, #3957ED)",
         boxShadow: "0 1px 8px rgba(0, 0, 0, 0.25)",
         padding: "1rem 2rem",
         borderRadius: "12px",

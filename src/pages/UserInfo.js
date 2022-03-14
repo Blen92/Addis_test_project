@@ -5,6 +5,8 @@ import { theme } from "../theme";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { Box, Text, Flex, Heading } from "rebass";
+import EditIcon from "@mui/icons-material/Edit";
+import Logo from "../components/Logo";
 
 function UserInfo() {
   const users = useSelector((state) => state.users.users);
@@ -17,6 +19,7 @@ function UserInfo() {
   return (
     <>
       <Container>
+        <Logo />
         <ThemeProvider them={theme}>
           <Flex justifyContent="center">
             <Heading mt={3} color="white" fontFamily="Lato, sans-serif">
@@ -24,7 +27,7 @@ function UserInfo() {
             </Heading>
             <Link to={`/editUser/${id}`}>
               <Text mt={3} pl={3} fontSize={[2, 3]} color="#55acee">
-                <i className="fa-solid fa-pen"></i>
+                <EditIcon />
               </Text>
             </Link>
           </Flex>
