@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "firstName": "Mikiyas",
+      "lastName": "Belay",
+      "age": "27",
+      "gender": "Male",
+      "height": "1.69m",
+      "id": 1
+    },
+    {
+      "firstName": "Blen",
+      "lastName": "Ali",
+      "age": "22",
+      "gender": "Female",
+      "height": "1.65m",
+      "id": 2
+    },
+    {
+      "firstName": "Abebe",
+      "lastName": "Kebede",
+      "age": "52",
+      "gender": "Male",
+      "height": "1.70m",
+      "id": 3
+    },
+    {
+      "firstName": "Saron",
+      "lastName": "Tamirat",
+      "age": "15",
+      "gender": "Female",
+      "height": "1.60m",
+      "id": 4
+    },
+    {
+      "firstName": "Shewit",
+      "lastName": "G/hiwot",
+      "age": "24",
+      "gender": "Female",
+      "height": "1.58m",
+      "id": 5
+    },
+    {
+      "firstName": "Tasew",
+      "lastName": "Ketema",
+      "age": "30",
+      "gender": "Male",
+      "height": "1.75m",
+      "id": 6
+    },
+    {
+      "firstName": "Abeba",
+      "lastName": "Teklay",
+      "age": "4o",
+      "gender": "Female",
+      "height": "1.65",
+      "id": 7
+    },
+    {
+      "firstName": "Addis",
+      "lastName": "Alemu",
+      "age": "30",
+      "gender": "Male",
+      "height": "1.66m",
+      "id": 8
+    }
+  ]
+}
