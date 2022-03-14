@@ -22,11 +22,11 @@ function UserInfo() {
         <Logo />
         <ThemeProvider them={theme}>
           <Flex justifyContent="center">
-            <Heading mt={3} color="white" fontFamily="Lato, sans-serif">
+            <Heading mt={1} color="white" fontFamily="Lato, sans-serif">
               User Details
             </Heading>
             <Link to={`/editUser/${id}`}>
-              <Text mt={3} pl={3} fontSize={[2, 3]} color="#55acee">
+              <Text mt={1} pl={3} fontSize={[2, 3]} color="#55acee">
                 <EditIcon />
               </Text>
             </Link>
