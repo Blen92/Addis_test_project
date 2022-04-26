@@ -9,6 +9,7 @@ import {
 } from "redux-saga/effects";
 
 import {
+  handleUsersFetch,
   handleUserFetch,
   handleUserCreate,
   handleUserDelete,
@@ -16,7 +17,11 @@ import {
 } from "./userSaga";
 
 export function* onLoadUsers() {
-  yield takeEvery(types.GET_USERS_START, handleUserFetch);
+  yield takeEvery(types.GET_USERS_START, handleUsersFetch);
+}
+
+export function* onLoadUser() {
+  yield takeEvery(types.GET_USER_START, handleUserFetch);
 }
 
 export function* onCreateUser() {
@@ -35,6 +40,7 @@ export function* onUpdateUser() {
 }
 
 const userSagas = [
+  fork(onLoadUser),
   fork(onLoadUsers),
   fork(onCreateUser),
   fork(onDeleteUser),

@@ -8,6 +8,16 @@ export const getUsersSuccess = (users) => ({
   payload: users,
 });
 
+export const getOneUserStart = (id) => ({
+  type: types.GET_USER_START,
+  payload: id,
+});
+
+export const getUserSuccess = (user) => ({
+  type: types.GET_USER_SUCCESS,
+  payload: user,
+});
+
 export const createUserStart = (user) => ({
   type: types.CREATE_USER_START,
   payload: user,

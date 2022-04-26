@@ -16,10 +16,11 @@ const List = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const users = useSelector((state) => state.users.users);
+  const loading = useSelector((state) => state.users.loading);
 
   useEffect(() => {
     dispatch(getUsersStart());
-  });
+  }, []);
 
   const handelDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this user?")) {
@@ -28,7 +29,9 @@ const List = (props) => {
   };
   return (
     <>
-      {users &&
+      {loading === true ? (
+        <h1>loading...</h1>
+      ) : (
         users.map((user) => {
           const { id, firstName, lastName, gender } = user;
           {
@@ -97,7 +100,8 @@ const List = (props) => {
               </ThemeProvider>
             </div>
           );
-        })}
+        })
+      )}
     </>
   );
 };
